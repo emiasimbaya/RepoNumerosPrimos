@@ -9,7 +9,7 @@ int main()
     printf ("Ingresa un numero\n");
     scanf("%d",&num);
 
-    int primo;
+    bool primo;
     int noprimo;
 
  for (int i = 2; i <= num / 2; i++) {
@@ -20,3 +20,19 @@ int main()
                 noprimo = 1;
             }
         }
+        
+        if (noprimo == 0) {
+            printf("No es un numero primo");
+        } else {
+            printf("Es un numero primo");
+        }
+    }
+bool esPrimo(int numero){
+    int i;
+    for(i=2; i<numero; i++){
+        if(numero%i==0){
+            return false;
+        }
+    }
+    return true;
+}
