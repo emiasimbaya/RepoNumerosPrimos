@@ -12,4 +12,11 @@ int main()
     int primo;
     int noprimo;
 
-}
+ for (int i = 2; i <= num / 2; i++) {
+            primo = num % i;
+            if (primo == 0) {
+                noprimo = 0;
+            } else {
+                noprimo = 1;
+            }
+        }
